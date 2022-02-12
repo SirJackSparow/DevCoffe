@@ -18,7 +18,7 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideOkHttpClient(): OkHttpClient{
+    fun provideOkHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(HttpLoggingInterceptor())
             .build()
@@ -36,7 +36,8 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideService(retrofit: Retrofit) : NewssterService {
-        return  retrofit.create(NewssterService::class.java)
+    fun provideService(retrofit: Retrofit): NewssterService {
+        return retrofit.create(NewssterService::class.java)
     }
+
 }

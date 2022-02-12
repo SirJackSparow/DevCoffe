@@ -1,4 +1,4 @@
-package com.startup.decofflaundry
+package com.startup.decofflaundry.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
